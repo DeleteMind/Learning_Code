@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-Pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        div#area {
+            background: rgb(28, 207, 28);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+
+        p#demo {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area" onclick="">
+        Interaja...
+    </div>
+    <p id="demo"></p>
+    <script>
+        var area = document.getElementById("area");
+
+        area.addEventListener("click", click);
+        area.addEventListener("mouseover", entrou);
+        area.addEventListener("mouseout", saiu)
+
+        function click() {
+            area.innerText = 'Clicou';
+            area.style.background = "blue"
+            document.getElementById('demo').innerHTML += "O usuário clicou <br>";
+        }
+
+        function entrou() {
+            area.innerText = 'Entrou';
+        }
+
+        function saiu() {
+            area.innerText = 'Saiu';
+        }
+    </script>
+</body>
+
+</html>

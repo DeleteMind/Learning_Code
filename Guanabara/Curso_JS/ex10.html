@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocímetro</title>
+</head>
+
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type="number" name="textvel" id="textvel"> Km/h
+    <button id="verificar">Verificar</button>
+    <p id="res"></p>
+
+
+    <script>
+        document.getElementById('verificar').addEventListener('click', calculo);
+
+        function calculo() {
+            let textv = document.getElementById('textvel');
+            let n1 = Number(textv.value)
+            let res = document.getElementById('res');
+
+
+
+
+            res.innerHTML = `<p>A sua velocidade é de <strong>${n1}km/h</strong></p>`;
+            if (n1 > 60) {
+                res.innerHTML += `<p>Você excedeu a velocidade mínima de 60km/h.</p>`
+            } else {
+                res.innerHTML += `<p>Você está dentro dos limites!</p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com o cinto de segurança.</p>`
+        } 
+    </script>
+</body>
+
+</html>
