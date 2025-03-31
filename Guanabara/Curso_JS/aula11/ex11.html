@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onde vive?</title>
+</head>
+
+<body>
+    <h1>Onde vive?</h1>
+    Digite onde vive: <input type="text" name="txt1" id="ondeVive">
+    <button id="check">Check</button>
+    <p id="resultado"></p>
+
+    <script>
+        let cidade = document.getElementById('ondeVive');
+        let button = document.getElementById('check');
+        let res = document.getElementById('resultado');
+
+        button.addEventListener('click', checkCidade);
+
+
+        function checkCidade() {
+
+            cidadeStr = String(cidade.value);
+            if (cidadeStr === 'Portugal') {
+                res.innerHTML += `<p>Você é de Portugal</p>`;
+            } else {
+                res.innerHTML += `<p>Você é de um pais estrangeiro</p>`;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
