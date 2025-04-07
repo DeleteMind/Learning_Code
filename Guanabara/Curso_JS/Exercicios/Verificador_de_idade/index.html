@@ -4,19 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Verificador de Idade</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>Verifica a Idade</header>
 
     <section>
-      Ano de nascimento: <input type="number"  id="ano"/>
+      Ano de nascimento: <input type="number" id="ano" />
       <div>
-        Sexo: <input type="checkbox" id="masc"/>Masculino
-        <input type="checkbox" id="femi"/> Feminino
-      </div>
-        <input type="submit" id="submit">
-        <p id="resultado">Detectamos</p>
+      <label>
+        Sexo: <input type="radio" name="sexo" id="masc" />Masculino
+        <!--Com o type="radio" e o name="sexo" podemos definir apenas uma escolha, sem isto daria para marcar ambos os sexos ao mesmo tempo-->
+        <input type="radio" name="sexo" id="femi" /> Feminino
+      </label>
+    </div>
+      <input type="submit" id="submit" />
+      <p id="resultado">Detectamos</p>
     </section>
     <script src="script.js"></script>
   </body>
