@@ -10,16 +10,22 @@
     <header>Verifica a Idade</header>
 
     <section>
-      Ano de nascimento: <input type="number" id="ano" />
+      <p>Ano de nascimento: <input type="number" id="ano" /></p>
       <div>
-      <label>
-        Sexo: <input type="radio" name="sexo" id="masc" />Masculino
-        <!--Com o type="radio" e o name="sexo" podemos definir apenas uma escolha, sem isto daria para marcar ambos os sexos ao mesmo tempo-->
-        <input type="radio" name="sexo" id="femi" /> Feminino
-      </label>
-    </div>
+        <p>Sexo:</p>
+        <input type="radio" name="sexo" id="masc" value="masculino" checked />
+        <label for="masc">Masculino </label>
+        <input type="radio" name="sexo" id="femi" value="feminino" />
+        <label for="femi"> Feminino </label>
+        </div>
+      </div>
+    <p>
       <input type="submit" id="submit" />
-      <p id="resultado">Detectamos</p>
+    </p>
+      <p id="resultado">Selecione a idade e género.</p>
+      <div id="foto">
+        <img id="imagem" src="family.jpg" alt="imagem da idade" />
+      </div>
     </section>
     <script src="script.js"></script>
   </body>
