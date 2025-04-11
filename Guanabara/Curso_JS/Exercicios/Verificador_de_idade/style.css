@@ -24,3 +24,7 @@ section {
 
   width: 200px;
 }
+
+#resultado {
+  text-align: center;
+}

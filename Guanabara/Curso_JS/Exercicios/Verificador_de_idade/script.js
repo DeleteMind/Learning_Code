@@ -7,6 +7,8 @@ let img = document.getElementById("imagem");
 
 sub.addEventListener("click", checkIdade);
 
+
+
 function checkIdade() {
   let anoActual = new Date().getFullYear();
   let anoNascimento = Number(ano.value);
@@ -25,6 +27,7 @@ function checkIdade() {
 
   if (idade <= 2) {
     //Bebé
+    
     res.innerHTML = `Detectamos um bebé ${checkSexo} com ${idade}`;
     checkSexo === "masculino"
       ? (img.src = "Fotos/bebeM.jpg")
