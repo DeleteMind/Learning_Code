@@ -12,9 +12,16 @@ function começar() {
 
   if (!inicio || !fim || !passo) {
     output.innerHTML = "Por favor, preencha todos os passos";
-  } else {
+  } else if (inicio < fim) {
     for (let i = inicio; i <= fim; i += passo) {
+      output.innerHTML += `${i} `;
+      
+    }
+  } else {
+    for (let i = inicio; i >= fim; i -= passo) {
       output.innerHTML += `${i} `;
     }
   }
+  output.innerHTML += `\u{1F3C1}`; // O sinal de += aqui serve para concatenar
 }
+
