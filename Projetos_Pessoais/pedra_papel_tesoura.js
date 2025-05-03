@@ -32,5 +32,5 @@ const game = (pick) => {
     
 };
 
-console.log(game("peda")); //Choosen of the player
+console.log(game("peDra")); //Choosen of the player
 
