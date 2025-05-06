@@ -2,12 +2,12 @@
 
 function posNegZero(num) {
     let res = '';
-    if (num === 0)  {
-        res = `${num} é Zero.`;
+    if (num > 0)  {
+        res = `${num} é Positivo.`;
     } else if (num < 0) {
         res =`${num} é Negativo.`;
     } else {
-         res =`${num} é Positivo.`;
+         res =`${num} é Zero.`;
     }
     return res;
 }
