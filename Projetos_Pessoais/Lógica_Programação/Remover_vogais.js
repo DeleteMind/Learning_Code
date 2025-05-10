@@ -2,6 +2,7 @@
 
 // A minha primeira solução
 
+/*
 function removerVogais(frase) {
   let vogais = "aeiouAEIOU";
   let vogaisFrase = "";
@@ -14,6 +15,24 @@ function removerVogais(frase) {
     }
   }
   return restoFrase;
+}
+
+console.log(removerVogais("filipe e Eva"));
+
+*/
+
+//Versão Simplificada
+
+function removerVogais(frase) {
+  let vogais = "aeiouAEIOU";
+  let res = "";
+  for (let i = 0; i < frase.length; i++) {
+    if (!vogais.includes(frase.at(i))) {
+      //só entra o if se NÃO fro um vogal
+      res += frase.at(i);
+    }
+  }
+  return res;
 }
 
 console.log(removerVogais("filipe"));
