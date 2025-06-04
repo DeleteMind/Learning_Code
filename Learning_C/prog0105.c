@@ -1,6 +1,6 @@
 #include  <stdio.h>
 
-main() {
+int main() {
     printf("Today is a \"good\" day!\n");
     printf("This is a bell.\7\n");   /*Character "\7"  */
     printf("And this is another bell.\a\n");  /*Character "\a" is the standard for bell */

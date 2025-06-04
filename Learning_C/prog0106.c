@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main() {
+int main() {
     printf("1 -\tClients\n");
     printf("2 -\tSuppliers\n"); 
     printf("3 -\tInvoices\n\n");
