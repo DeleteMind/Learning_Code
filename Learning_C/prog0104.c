@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main() {
+int main(void) {
     printf("C\nis the greatest\nLanguage\n");
-    
+    return 0;
 }

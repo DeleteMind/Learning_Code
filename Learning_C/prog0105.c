@@ -1,6 +1,6 @@
 #include  <stdio.h>
 
-int main() {
+int main(void) {
     printf("Today is a \"good\" day!\n");
     printf("This is a bell.\7\n");   /*Character "\7"  */
     printf("And this is another bell.\a\n");  /*Character "\a" is the standard for bell */
@@ -9,6 +9,7 @@ int main() {
     printf("This is a horizonal tab.\tTest\n"); /*Character "\t" return a <TAB>*/
     printf("This is a vertical tab\vTest\n"); /*Character "\v" */
     printf("If I want to use \' and \" and \? and %%\n");
+    return 0;
 }
 
 
